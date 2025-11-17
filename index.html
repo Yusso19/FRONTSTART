@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Wedding Invitation</title>
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+	<style>
+		:root{--card-w:520px;--paper:#fbfaf8;--ink:#111;--muted:#777}
+		*{box-sizing:border-box}
+		html,body{height:100%}
+		body{margin:0;display:flex;align-items:center;justify-content:center;background:#f2f1ef;font-family:Playfair Display,serif;color:var(--ink);padding:36px}
+
+		.card{width:100%;max-width:var(--card-w);background:var(--paper);border-radius:6px;padding:56px 48px;box-shadow:0 10px 30px rgba(20,20,20,0.08);border:1px solid rgba(0,0,0,0.03);text-align:center}
+
+		.intro{font-family:'Great Vibes',cursive;font-size:56px;line-height:0.9;margin:0 0 6px;color:var(--ink);}
+		.of{font-size:18px;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:18px}
+
+		.names{font-weight:700;font-size:20px;letter-spacing:2px;text-transform:uppercase;margin:0 0 20px}
+
+		.meta{color:var(--muted);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+		.date{font-weight:600;font-size:14px;letter-spacing:1.6px;margin:14px 0}
+		.venue{margin-top:8px}
+
+		.note{font-style:italic;color:var(--muted);font-size:13px;margin-top:18px}
+
+		/* Decorative thin divider */
+		.divider{height:1px;background:linear-gradient(90deg,transparent,#e6e2dd,transparent);margin:22px 0;border-radius:1px}
+
+		@media (max-width:520px){
+			.card{padding:36px 20px}
+			.intro{font-size:44px}
+			.names{font-size:16px}
+		}
+	</style>
+</head>
+<body>
+	<main class="card" role="main">
+		<h1 class="intro">the<br/>Wedding</h1>
+		<div class="of">of</div>
+
+		<h2 class="names">LAUREN HALL &amp; JORDON QUINN</h2>
+
+		<div class="divider" aria-hidden="true"></div>
+
+		<div class="meta">Please join us on</div>
+		<div class="date">FRIDAY 24TH APRIL 2019 — 2 O'CLOCK</div>
+		<div class="meta venue">WINCHESTER HOUSE</div>
+
+		<p class="note">Reception to follow</p>
+	</main>
+</body>
+</html>
