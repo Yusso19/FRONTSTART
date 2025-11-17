@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хабиб Нурмагомедов</title>
+    <style>
+        /* Общие стили для страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://textur.gas-kvas.com/uploads/posts/2024-10/textur-gas-kvas-com-inyd-p-teksturi-zheleznaya-kletka-14.jpg'); /* Новый фон */
+            background-size: cover; /* Масштабирует изображение, чтобы покрыть весь экран */
+            background-position: center; /* Центрирует изображение */
+            background-attachment: fixed; /* Фон остаётся на месте при прокрутке */
+            color: #fff; /* Белый текст для контраста */
+        }
+
+        /* Общие стили для текста */
+        h1, h2, p {
+            text-align: center;
+            text-shadow: 2px 2px 4px #000; /* Чёрный контур для текста */
+            margin-bottom: 20px;
+        }
+
+        /* Стили для таблицы */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный тёмный фон */
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для таблицы */
+            border-radius: 10px; /* Скруглённые углы */
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 12px;
+            text-align: center;
+            text-shadow: 1px 1px 2px #000; /* Чёрный контур для текста в таблице */
+        }
+
+        th {
+            background-color: #333; /* Тёмный фон для заголовков таблицы */
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.7); /* Немного светлее для чётных строк */
+        }
+
+        tr:hover {
+            background-color: #555; /* Подсветка строки при наведении */
+        }
+
+        /* Стили для формы */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 30px;
+            width: 50%;
+            background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный тёмный фон */
+            border-radius: 15px; /* Скруглённые углы */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Тень для формы */
+            color: #fff;
+        }
+
+        form label {
+            font-size: 18px;
+            margin: 10px 0 5px;
+            text-shadow: 1px 1px 2px #000; /* Чёрный контур для текста меток */
+        }
+
+        form input {
+            width: 80%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Внутренняя тень для полей ввода */
+        }
+
+        form input:focus {
+            outline: none;
+            border-color: #4CAF50; /* Зелёная рамка при фокусе */
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.8); /* Подсветка при фокусе */
+        }
+
+        form button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #4CAF50; /* Зелёная кнопка */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px #000; /* Чёрный контур для текста кнопки */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Анимация при наведении */
+        }
+
+        form button:hover {
+            background-color: #45a049; /* Более тёмный зелёный при наведении */
+            transform: scale(1.05); /* Лёгкое увеличение кнопки */
+        }
+
+        form button:active {
+            transform: scale(0.95); /* Лёгкое уменьшение кнопки при нажатии */
+        }
+
+        /* Стили для футера */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.9); /* Полупрозрачный чёрный фон */
+            color: #fff;
+            border-top: 2px solid #555;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        footer h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        footer p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        footer a img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        footer a:hover {
+            transform: scale(1.1); /* Увеличение при наведении */
+        }
+
+        /* Центрирование фото и видео */
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирует элементы по горизонтали */
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .center-content img {
+            max-width: 80%; /* Ограничивает ширину изображения */
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 15px; /* Скруглённые углы для фото */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Глубокая тень для фото */
+            transition: transform 0.3s ease; /* Анимация при наведении */
+        }
+
+        .center-content img:hover {
+            transform: scale(1.05); /* Увеличение фото при наведении */
+        }
+
+        .center-content iframe {
+            width: 80%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Глубокая тень для видео */
+        }
+
+        .center-content audio {
+            width: 80%; /* Ограничивает ширину аудиоплеера */
+            max-width: 560px;
+            margin-top: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Глубокая тень для аудиоплеера */
+            border-radius: 10px; /* Скруглённые углы для аудиоплеера */
+        }
+
+        /* Стили для ссылок */
+        a {
+            color: #ccc; /* Светло-серый цвет ссылки */
+            text-decoration: none; /* Убирает подчёркивание */
+            font-weight: bold; /* Жирный текст */
+            transition: transform 0.3s ease, color 0.3s ease; /* Плавная анимация для увеличения и изменения цвета */
+        }
+
+        a:hover {
+            transform: scale(1.1); /* Увеличение ссылки при наведении */
+            color: #aaa; /* Более тёмный серый при наведении */
+            text-decoration: underline; /* Подчёркивание при наведении */
+        }
+
+        /* Стили для ссылки на Википедию */
+        .wiki-link {
+            color: #ccc; /* Светло-серый цвет ссылки */
+            text-decoration: none; /* Убирает подчёркивание */
+            font-weight: bold; /* Жирный текст */
+            transition: transform 0.3s ease, color 0.3s ease; /* Плавная анимация для увеличения и изменения цвета */
+        }
+
+        .wiki-link:hover {
+            transform: scale(1.1); /* Увеличение ссылки при наведении */
+            color: #aaa; /* Более тёмный серый при наведении */
+            text-decoration: underline; /* Подчёркивание при наведении */
+        }
+    </style>
+</head>
+<body>
+    <div class="center-content">
+        <!-- Фото Хабиба -->
+        <img src="https://th.bing.com/th/id/OIP.W5FdXrdhwRePkTldnz7jlAHaE8?w=303&h=202&c=7&r=0&o=7&pid=1.7" alt="Хабиб Нурмагомедов">
+
+        <!-- Информация о Хабибе -->
+        <h1>Хабиб Нурмагомедов</h1>
+        <p>Хабиб Нурмагомедов — российский боец смешанных единоборств, бывший чемпион UFC в лёгком весе. 
+           Он известен своей непобеждённой карьерой и считается одним из величайших бойцов в истории MMA.</p>
+
+        <!-- Видео -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0hyaGsagV08" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <p>
+        Хабиб Нурмагомедов родился 20 сентября 1988 года в селе Сильди, Дагестан, Россия. 
+        Он начал заниматься боевыми искусствами с раннего возраста под руководством своего отца, Абдулманапа Нурмагомедова, 
+        который был известным тренером по самбо и боевым искусствам. Хабиб стал первым российским бойцом, 
+        который завоевал титул чемпиона UFC, и завершил свою карьеру с рекордом 29 побед и 0 поражений.
+    </p>
+    <p>
+        Помимо спортивных достижений, Хабиб известен своей скромностью, дисциплиной и уважением к традициям. 
+        После завершения карьеры он сосредоточился на тренерской деятельности и развитии молодого поколения бойцов.
+        И вот песня с которой он часто ассоциируется.
+    </p>
+    <!-- Песня -->
+    <div class="center-content">
+        <audio controls>
+            <source src="Sabina_Saidova_-_Moj_Dagestan_(TheMP3.Info).mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </div>
+    <p>
+        <a href="https://ru.wikipedia.org/wiki/%D0%9D%D1%83%D1%80%D0%BC%D0%B0%D0%B3%D0%BE%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2,_%D0%A5%D0%B0%D0%B1%D0%B8%D0%B1_%D0%90%D0%B1%D0%B4%D1%83%D0%BB%D0%BC%D0%B0%D0%BD%D0%B0%D0%BF%D0%BE%D0%B2%D0%B8%D1%87" class="wiki-link">
+            <strong> Подробнее о Хабибе Нурмагомедове на Википедии</strong>
+        </a>
+    </p>
+    <h2>Награды и достижения</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th><i>Год</i></th>
+                <th><i>Награда</i></th>
+                <th><i>Организация</i></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i>2016</i></td>
+                <td><i>Лучший боец года</i></td>
+                <td><i>World MMA Awards</i></td>
+            </tr>
+            <tr>
+                <td><i>2018</i></td>
+                <td><i>Чемпион UFC в лёгком весе</i></td>
+                <td><i>UFC</i></td>
+            </tr>
+            <tr>
+                <td><i>2020</i></td>
+                <td><i>Боец десятилетия</i></td>
+                <td><i>ESPN</i></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2 style="text-align: center; color: #f9f9f9; margin-top: 20px;">
+        Фонд Хабиба Нурмагомедова для поддержки больных и нуждающихся
+    </h2>
+    <p style="text-align: center; color: #f9f9f9; font-size: 18px; margin-bottom: 20px;">
+        Этот фонд создан для помощи людям, которые нуждаются в поддержке. 
+        Хабиб Нурмагомедов активно участвует в благотворительности, помогая больным и нуждающимся по всему миру.
+    </p>
+    <form action="https://httpbin.org/post" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="username" placeholder="Введите ваше имя" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+    
+        <button type="submit">Отправить</button>
+    </form>
+    <footer style="text-align: center; margin-top: 40px; padding: 30px; background-color: rgba(0, 0, 0, 0.9); color: #fff; border-top: 2px solid #555; box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);">
+        <h3 style="font-size: 24px; margin-bottom: 10px; text-shadow: 2px 2px 4px #000;">Социальные сети Хабиба Нурмагомедова</h3>
+        <p style="font-size: 16px; margin-bottom: 20px; text-shadow: 1px 1px 2px #000;">
+            Следите за Хабибом в социальных сетях, чтобы быть в курсе его новостей и благотворительных проектов.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 30px; margin-top: 10px;">
+            <a href="https://www.instagram.com/khabib_nurmagomedov/" target="_blank" style="color: #fff; text-decoration: none; display: flex; align-items: center; gap: 10px; transition: transform 0.3s ease;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);"> 
+                <span style="font-size: 18px;">Instagram</span>
+            </a>
+            <a href="https://twitter.com/TeamKhabib" target="_blank" style="color: #fff; text-decoration: none; display: flex; align-items: center; gap: 10px; transition: transform 0.3s ease;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png?20230802142353" alt="Twitter" style="width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);"> 
+                <span style="font-size: 18px;">Twitter</span>
+            </a>
+            <a href="https://www.facebook.com/KhabibTheEagle" target="_blank" style="color: #fff; text-decoration: none; display: flex; align-items: center; gap: 10px; transition: transform 0.3s ease;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);"> 
+                <span style="font-size: 18px;">Facebook</span>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!--https://gleaming-frangipane-642f05.netlify.app/habib.html>
+`````
